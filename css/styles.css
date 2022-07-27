@@ -1,0 +1,5 @@
+/*-------- Mise en place box-sizing -------- */
+*
+{
+    box-sizing: border-box;
+}
