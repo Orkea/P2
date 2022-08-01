@@ -3,3 +3,241 @@
 {
     box-sizing: border-box;
 }
+/*------- Police --------*/
+@font-face {
+    font-family: "ralewaythin";
+    src: url('../font/Raleway-VariableFont_wght.ttf') format('truetype'),
+        url('../font/Raleway-Italic-VariableFont_wght.ttf') format('truetype');
+}
+@font-face {
+    font-family: "ralewaythin";
+    src: url('../font/static/Raleway-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+body
+{
+    font-family:"ralewaythin";
+    margin-left: 15px;
+    
+}
+/* -------- Header -------- */
+header
+{
+    display:flex;
+    justify-content: space-between;
+    height: 100px;
+    margin: 20px;
+    
+}
+
+#logo_booki
+{
+    width: 120px;
+    object-fit: contain;
+}
+
+#nav_ul
+{
+    display:flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+}
+
+.nav_a
+{
+    border-top: 3px solid white;
+    padding: 30px;
+    color:black;
+    text-decoration: none;
+}
+
+.nav_a:hover
+{
+    border-top: 3px solid #0065FC;
+    padding: 30px;
+    color: #0065FC;
+}
+
+/* -------- Section recherche --------*/
+#recherche_p
+{
+    position:relative;
+
+}
+
+.fa-location-dot
+{
+    background-color: #F2F2F2;
+    border-radius: 10px 0 0 10px;
+    padding: 10px;
+    border: solid #F2F2F2 2px;
+  } 
+#form_search, #form_submit_recherche, #form_submit_loupe
+{
+    font-weight:bold;
+}
+#form_search
+{
+    position:absolute;
+    left:35px ;
+    padding:10px 91px 10px 10px;
+    border:solid #F2F2F2 2px;
+    outline: none;
+    
+}
+#form_search:focus
+{
+    position:absolute;
+    left:35px ;
+    padding:10px 91px 10px 10px;
+    color:red;
+}
+#form_submit_recherche
+{
+    background-color: #0065FC;
+    color: white;
+    position: absolute;
+    left: 300px;
+    padding: 10px;
+    border: solid #0065FC 2px;
+    border-radius: 0 10px 10px 0;
+}
+
+/*-------- Partie Filtre -------*/
+
+#filtre, .filtre_theme
+{
+    display: flex;
+    align-items: center;
+}
+.filtre_theme
+{
+    /*height: 40px;*/
+    justify-content: space-between;
+
+}
+.filtre_lien
+{
+        display: inline-flex;
+        height: 50px;
+        border-radius: 25px;
+        border: solid #F2F2F2 3px;
+        text-decoration: none;
+        margin: 20px;
+}
+.filtre_i
+{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    background-color: #DEEBFF;
+    border-radius: 45px;
+    color:#0065FC;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: -3px;
+    margin-left: -3px;
+}
+.filtre_titre
+{
+    padding: 10px;
+    font-weight: bold;
+}
+/*-------- media queries tablettes -------- */
+@media all and (max-width: 992px)
+{
+    
+}
+/*-------- media queries moobiles -------- */
+@media screen and (max-width:768px)
+{
+    body
+    {
+        margin:0px;
+    }
+    header
+    {
+        flex-direction: column;
+        height: 150px;
+        margin: 10px 0;
+    }
+    #logo_booki
+    {
+        width: 100px;
+        margin: 10px auto;
+    }
+    #nav_ul
+    {
+        margin-top: 50px;
+        padding:0 0 20px;  
+        border-bottom: solid #F2F2F2;
+    }
+    .nav_a
+    {
+        padding: 20px 50px;
+    }
+    
+    
+    .nav_a:hover
+    {
+        border-top: none;
+        border-bottom: 3px solid #0065FC ; 
+        padding: 20px 50px;
+    }
+    .nav_a:active
+    {
+        border-top: none;
+        border-bottom: 3px solid #0065FC ; 
+        padding: 20px 50px;
+    }
+    main
+    {
+        margin: 0 15px;
+    }
+    #form_submit_recherche
+    {
+        display:none;
+    }
+    #form_submit_loupe
+    {
+        position: absolute;
+        left: 300px;
+        padding: 10px 20px;
+        background-color:white;
+        opacity: 0;
+       /* border: solid #0065FC 2px;*/
+        border-radius: 0 10px 10px 0;
+    }
+    .fa-magnifying-glass
+    {
+        position: absolute;
+        left: 300px ;
+        z-index: -1;
+        padding: 10px;
+        background-color: #0065FC;
+        border: solid #0065FC 2px;
+        border-radius: 0 10px 10px 0;
+        color:white;
+    }
+    #filtre
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .filtre_theme
+    {
+        flex-wrap: wrap;
+
+    }
+    .filtre_lien
+    {
+        margin: 15px 15px 15px 0;
+    }
+    
+
+    
+    
+}
