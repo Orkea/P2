@@ -214,9 +214,12 @@ header
     height: 100%;
     object-fit: cover;
 }
-.card_h:hover .card_body h4, .card_h:hover .card_body p
+.card_h:hover, .card_pop:hover, .card_pop_body:hover h4, .card_pop_body:hover p
 {
-    color:rgb(78, 195, 241);
+    background-color:rgb(78, 195, 241);
+    color:white;
+    /*cursor: pointer;*/
+    transform: scale(1.03);
 }
 .card_body
 {
@@ -228,7 +231,7 @@ h4, .card_body p
 }
 .star_blue
 {
-    color:#0065FC;
+    color:#5498fe;
     font-size: small;
 }
 .star_grey
@@ -302,6 +305,10 @@ aside
 {
     margin:0 0 30px 0;
 }
+.card_pop_body:hover
+{
+    color:rgb(78, 195, 241);
+}
 /* --------Section Activités à Marseille ------*/
 #activites
 {
@@ -372,7 +379,12 @@ aside
     object-fit: cover;
     border-radius: 10px 10px 0 0;
 }
+#activites_m h4:hover
+{
+    color:rgb(78, 195, 241);
+}
 
+    /* -------- Footer -------*/
 footer
 {
     background-color:#F2F2F2;
@@ -473,7 +485,9 @@ footer a
     }
     #form_search
     {
-        padding: 10px 57px 10px 10px;
+        padding: 10px 60px 10px 10px;
+        z-index: -1;
+        border-bottom: solid #F2F2F2 3px;
     }
     #form_submit_recherche
     {
@@ -486,7 +500,7 @@ footer a
         padding: 10px 20px;
         background-color:white;
         opacity: 0;
-       border: solid #0065FC 2px;
+        border: solid #0065FC 2px;
         border-radius: 0 10px 10px 0;
     }
     .fa-magnifying-glass
@@ -494,7 +508,7 @@ footer a
         position: absolute;
         left: 300px ;
         z-index: -1;
-        padding: 10px;
+        padding: 12px;
         background-color: #0065FC;
         border: solid #0065FC 2px;
         border-radius: 0 10px 10px 0;
@@ -529,14 +543,78 @@ footer a
     aside
     {
         order:1;
+        margin: 0 -15px;
         width: auto;
+        padding: 0;
+        border-radius: 0;
+    }
+    #hebergement_pop_titre
+    {
+        justify-content: space-between;
     }
     #hebergement_m
     {
         order:2;
+        width: 100%;
+        padding: 0;
+        background-color: white;
+        border-radius: 0;
     }
-    #hebergement_m
+    .card_h
     {
         width: 100%;
     }
+
+    /* ---------Section activités à marseille --------*/
+    #activites
+    {
+        margin:0 0 60px 0;
+    }
+    #activites_m
+    {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .card_activites_1
+    {
+        width: 100%;
+        height:160px;
+        margin: 20px 0;
+    }
+    .card_activites_1 img
+    {
+        height: 70%;
+    }
+    .card_activites_2
+    {
+        width: 345px;
+    }
+    .card_activites_2_small, .card_activites_2_x_small
+    {
+        height: 160px;
+    }
+    .card_activites_2_small img
+    {
+        height: 70%;
+    }
+
+    .card_activites_2_small
+    {
+        margin-bottom: 20px;
+    }
+    .x_small
+    {
+        margin-bottom: 20px;
+    }
+    /* -------- footer --------*/
+    #footer_container
+    {
+        flex-direction: column;
+    }
+    .footer_list
+    {
+        margin-bottom: 20px;
+    }
+
 }
