@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" hrel="css/normalize.css" />
+        <link rel="stylesheet" href="css/normalize.css" />
         <link rel="stylesheet" href="css/styles.css" />
         <title>Booki</title>
     </head>
@@ -13,7 +13,7 @@
             <img src="images/logo/Booki@3x.png" alt="Logo Booki" id="logo_booki"/>
             <nav>
                 <ul id="nav_ul">
-                    <li><a href="#hebergement" class="nav_a">Hébergements</a></li>
+                    <li><a href="#hebergement_m" class="nav_a">Hébergements</a></li>
                     <li><a href="#activites" class="nav_a">Activités</a></li>
                 </ul>
             </nav>
@@ -24,7 +24,7 @@
                 <p>En plein centre ville ou en pleine nature</p>
                     <form method="post" action="ville.php">
                         <p id="recherche_p">
-                            <i class="fa-solid fa-location-dot"></i>
+                            <Span id="recherche_i"><i class="fa-solid fa-location-dot"></i></Span>
                             <input type="search" name="ville" value="Marseille, France" id="form_search" focus/>
                             <input type="submit" value="Rechercher" id="form_submit_recherche" />
                             <input type="submit" value="" id="form_submit_loupe"/><i class="fa-solid fa-magnifying-glass"></i>
@@ -54,11 +54,13 @@
                             <div class="card_body">
                                 <h4>Auberge La Cannebière</h4>
                                 <p>Nuit à partir de <strong>25€</strong></p>
-                                <i class="fa-solid fa-star star_blue"></i>
-                                <i class="fa-solid fa-star star_blue"></i>
-                                <i class="fa-solid fa-star star_blue"></i>
-                                <i class="fa-solid fa-star star_blue"></i>
-                                <i class="fa-solid fa-star star_grey"></i>
+                                <div class="star_container">
+                                    <i class="fa-solid fa-star star_blue"></i>
+                                    <i class="fa-solid fa-star star_blue"></i>
+                                    <i class="fa-solid fa-star star_blue"></i>
+                                    <i class="fa-solid fa-star star_blue"></i>
+                                    <i class="fa-solid fa-star star_grey"></i>
+                                </div>
                             </div>
                         </div>
                         <div class="card_h">
@@ -68,11 +70,13 @@
                             <div class="card_body">
                                 <h4>Hôtel du port</h4>
                                 <p>Nuit à partir de <strong>52€</strong></p>
-                                <i class="fa-solid fa-star star_blue"></i>
-                                <i class="fa-solid fa-star star_blue"></i>
-                                <i class="fa-solid fa-star star_blue"></i>
-                                <i class="fa-solid fa-star star_blue"></i>
-                                <i class="fa-solid fa-star star_blue"></i>
+                                <div class="star_container">
+                                    <i class="fa-solid fa-star star_blue"></i>
+                                    <i class="fa-solid fa-star star_blue"></i>
+                                    <i class="fa-solid fa-star star_blue"></i>
+                                    <i class="fa-solid fa-star star_blue"></i>
+                                    <i class="fa-solid fa-star star_blue"></i>
+                                </div>
                             </div>
                         </div>    
                         <div class="card_h">
@@ -82,11 +86,13 @@
                             <div class="card_body">
                                 <h4>Hôtel Les mouettes</h4>
                                 <p>Nuit à partir de <strong>76€</strong></p>
-                                <i class="fa-solid fa-star star_blue"></i>
-                                <i class="fa-solid fa-star star_blue"></i>
-                                <i class="fa-solid fa-star star_blue"></i>
-                                <i class="fa-solid fa-star star_blue"></i>
-                                <i class="fa-solid fa-star star_grey"></i>
+                                <div class="star_container">
+                                    <i class="fa-solid fa-star star_blue"></i>
+                                    <i class="fa-solid fa-star star_blue"></i>
+                                    <i class="fa-solid fa-star star_blue"></i>
+                                    <i class="fa-solid fa-star star_blue"></i>
+                                    <i class="fa-solid fa-star star_grey"></i>
+                                </div>
                             </div>
                         </div>
                         <div class="card_h">
@@ -96,11 +102,13 @@
                             <div class="card_body">
                                 <h4>Hôtel de la mer</h4>
                                 <p>Nuit à partir de <strong>46€</strong></p>
-                                <i class="fa-solid fa-star star_blue"></i>
-                                <i class="fa-solid fa-star star_blue"></i>
-                                <i class="fa-solid fa-star star_blue"></i>
-                                <i class="fa-solid fa-star star_grey"></i>
-                                <i class="fa-solid fa-star star_grey"></i>
+                                <div class="star_container">
+                                    <i class="fa-solid fa-star star_blue"></i>
+                                    <i class="fa-solid fa-star star_blue"></i>
+                                    <i class="fa-solid fa-star star_blue"></i>
+                                    <i class="fa-solid fa-star star_grey"></i>
+                                    <i class="fa-solid fa-star star_grey"></i>
+                                </div>
                             </div>
                         </div>
                         <div class="card_h">
@@ -110,12 +118,14 @@
                             <div class="card_body">
                                 <h4>Auberge Le Panier</h4>
                                 <p>Nuit à partir de <strong>23€</strong></p>
-                                <i class="fa-solid fa-star star_blue"></i>
-                                <i class="fa-solid fa-star star_blue"></i>
-                                <i class="fa-solid fa-star star_blue"></i>
-                                <i class="fa-solid fa-star star_blue"></i>
-                                <i class="fa-solid fa-star star_grey"></i>
-                            </div>
+                                <div class="star_container">
+                                    <i class="fa-solid fa-star star_blue"></i>
+                                    <i class="fa-solid fa-star star_blue"></i>
+                                    <i class="fa-solid fa-star star_blue"></i>
+                                    <i class="fa-solid fa-star star_blue"></i>
+                                    <i class="fa-solid fa-star star_grey"></i>
+                                </div>
+                               </div>
                         </div>
                         <div class="card_h">
                             <div class="card_img_h">
@@ -124,11 +134,13 @@
                             <div class="card_body">
                                 <h4>Hôtel chez Amina</h4>
                                 <p>Nuit à partir de <strong>96€</strong></p>
-                                <i class="fa-solid fa-star star_blue"></i>
-                                <i class="fa-solid fa-star star_blue"></i>
-                                <i class="fa-solid fa-star star_blue"></i>
-                                <i class="fa-solid fa-star star_blue"></i>
-                                <i class="fa-solid fa-star star_blue"></i>
+                                <div class="star_container">
+                                    <i class="fa-solid fa-star star_blue"></i>
+                                    <i class="fa-solid fa-star star_blue"></i>
+                                    <i class="fa-solid fa-star star_blue"></i>
+                                    <i class="fa-solid fa-star star_blue"></i>
+                                    <i class="fa-solid fa-star star_blue"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -147,11 +159,13 @@
                             <div class="card_pop_body">
                                 <h4>Hôtel Le soleil du matin</h4>
                                 <p>Nuit à partir de <strong>128€</strong></p>
+                                <div class="star_container_pop">
                                     <i class="fa-solid fa-star star_blue"></i>
                                     <i class="fa-solid fa-star star_blue"></i>
                                     <i class="fa-solid fa-star star_blue"></i>
                                     <i class="fa-solid fa-star star_blue"></i>
                                     <i class="fa-solid fa-star star_blue"></i>
+                                </div>
                             </div>
                         </div>
 
@@ -162,11 +176,13 @@
                             <div class="card_pop_body">
                                 <h4>Au coeur de l'eau Chambres d'hôtes</h4>
                                 <p>Nuit à partir de <strong>71€</strong></p>
+                                <div class="star_container_pop">
                                     <i class="fa-solid fa-star star_blue"></i>
                                     <i class="fa-solid fa-star star_blue"></i>
                                     <i class="fa-solid fa-star star_blue"></i>
                                     <i class="fa-solid fa-star star_blue"></i>
                                     <i class="fa-solid fa-star star_grey"></i>
+                                </div>
                             </div>
                         </div>
 
@@ -177,11 +193,13 @@
                             <div class="card_pop_body">
                                 <h4>Hôtel Tout bleu et Blanc</h4>
                                 <p>Nuit à partir de <strong>68€</strong></p>
+                                <div class="star_container_pop">
                                     <i class="fa-solid fa-star star_blue"></i>
                                     <i class="fa-solid fa-star star_blue"></i>
                                     <i class="fa-solid fa-star star_blue"></i>
                                     <i class="fa-solid fa-star star_blue"></i>
                                     <i class="fa-solid fa-star star_grey"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
