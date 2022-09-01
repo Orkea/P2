@@ -194,7 +194,7 @@ main
     text-decoration: none;
     color: black;
     width:30%;
-    height: 230px;
+    height: 220px;
     border-radius: 20px;
 }
 #card_hebergement
@@ -324,13 +324,7 @@ aside
     height: 100%;
     object-fit: cover;
 }
-/*
-#h4_au_coeur
-    {
-    max-height: 39px;
-    overflow: hidden;
-    }
-*/
+
 .card_pop_body
 {
     padding: 20px 10px 0 20px;
@@ -616,6 +610,10 @@ footer a
      {
         background-color: white;
      }
+     #footer_container
+     {
+        width:95%;
+    }
 
 }
 
@@ -800,6 +798,7 @@ footer a
     
     .card_activites_2
     {
+        flex-direction:column ;
         width: 100%;
         gap: 20px;
     }
