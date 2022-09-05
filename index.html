@@ -19,13 +19,13 @@
             </nav>
         </header>
         <main>
-            <section>
+            <section id="section_hebergement_vacances">
                 <h1>Trouver votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
                     <form method="post" action="ville.php">
                         <p id="recherche_p">
                             <Span id="recherche_i"><i class="fa-solid fa-location-dot"></i></Span>
-                            <input type="search" name="ville" placeholder="Marseille, France" id="form_search"/>
+                            <input type="search" name="ville" value="Marseille, France" id="form_search"/>
                             <input type="submit" value="Rechercher" id="form_submit_recherche" />
                             <input type="submit" value="" id="form_submit_loupe"/><i class="fa-solid fa-magnifying-glass"></i>
                         </p>
@@ -33,8 +33,8 @@
                 <div id="filtre">
                     <h3>Filtres</h3>
                     <div class="filtre_theme">
-                        <div class="filtre_lien"><span class="filtre_i"><i class="fa-solid fa-money-bill-wave"></i></span><span class="filtre_titre">Economique</span></div>
-                        <div class="filtre_lien"><span class="filtre_i"><i class="fa-solid fa-child-reaching"></i></span><span class="filtre_titre">Familliale</span></div>
+                        <div class="filtre_lien"><span class="filtre_i"><i class="fa-solid fa-money-bill-wave"></i></span><span class="filtre_titre">Économique</span></div>
+                        <div class="filtre_lien"><span class="filtre_i"><i class="fa-solid fa-child-reaching"></i></span><span class="filtre_titre">Familial</span></div>
                         <div class="filtre_lien"><span class="filtre_i"><i class="fa-solid fa-heart"></i></span><span class="filtre_titre">Romantique</span></div>
                         <div class="filtre_lien"><span class="filtre_i"><i class="fa-solid fa-dog"></i></span><span class="filtre_titre">Animaux autorisés</span></div>
                     </div>
@@ -50,9 +50,9 @@
                         <a href="#" class="lien_card_hebergement_m">
                             <div class="card_h">
                                 <div class="card_img_h">
-                                    <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="auberge la cannebiere"/>
+                                    <img srcset="images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg 3000w, images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg 1500w, images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg 750w" sizes="(max-width:768px) 750px, (max-width: 992px) 1500px, 3000px" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="auberge la cannebiere"/>
                                 </div>
-                                <div class="card_body">
+                                <div class="card_body" id="card_body_auberge">
                                     <h4>Auberge La Cannebière</h4>
                                     <p>Nuit à partir de <strong>25€</strong></p>
                                     <div class="star_container">
@@ -68,7 +68,7 @@
                         <a href="#" class="lien_card_hebergement_m">
                             <div class="card_h">
                                 <div class="card_img_h">
-                                    <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hotel du port"/>
+                                    <img srcset="images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg 2750w, images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg 1370w, images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg 690w" sizes="(max-width:768px) 750px, (max-width: 992px) 1500px, 3000px" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hotel du port"/>
                                 </div>
                                 <div class="card_body">
                                     <h4>Hôtel du port</h4>
@@ -86,7 +86,7 @@
                         <a href="#" class="lien_card_hebergement_m">
                             <div class="card_h">
                                 <div class="card_img_h">
-                                    <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="hotel les mouettes"/>
+                                    <img srcset="images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg 3000w, images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg 1500w, images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg 750w" sizes="(max-width:768px) 690px, (max-width: 992px) 1370px, 2750px"  src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="hotel les mouettes"/>
                                 </div>
                                 <div class="card_body">
                                     <h4>Hôtel Les mouettes</h4>
@@ -104,7 +104,7 @@
                         <a href="#" class="lien_card_hebergement_m">
                             <div class="card_h">
                                 <div class="card_img_h">
-                                    <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="hotel de la mer"/>
+                                    <img srcset="images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg 2000w, images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg 1000w, images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg 500w" sizes="(max-width:768px) 500px, (max-width: 992px) 1000px, 2000px" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="hotel de la mer"/>
                                 </div>
                                 <div class="card_body">
                                     <h4>Hôtel de la mer</h4>
@@ -122,7 +122,7 @@
                         <a href="#" class="lien_card_hebergement_m">
                             <div class="card_h">
                                 <div class="card_img_h">
-                                    <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="auberge le panier"/>
+                                    <img srcset="images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 2600w, images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 1300w, images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 650w" sizes="(max-width:768px) 650px, (max-width: 992px) 1300px, 2600px" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="auberge le panier"/>
                                 </div>
                                 <div class="card_body">
                                     <h4>Auberge Le Panier</h4>
@@ -140,7 +140,7 @@
                         <a href="#" class="lien_card_hebergement_m">
                             <div class="card_h">
                                 <div class="card_img_h">
-                                    <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="hotel chez amina"/>
+                                    <img srcset="images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 1940w, images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 970w, images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 490w" sizes="(max-width:768px) 490px, (max-width: 992px) 970px, 1940px" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="hotel chez amina"/>
                                 </div>
                                 <div class="card_body">
                                     <h4>Hôtel chez Amina</h4>
@@ -167,11 +167,14 @@
                         <a href="#" class="lien_card_pop">
                             <div class="card_pop">
                                 <div class="card_pop_img">
-                                    <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="hotel le soleil du matin"/>
+                                    <img srcset="images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 2125w, images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 1060w, images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 530w" sizes="(max-width:768px) 530px, (max-width: 992px) 1060px, 2125px" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="hotel le soleil du matin"/>
                                 </div>
                                 <div class="card_pop_body">
-                                    <h4>Hôtel Le soleil du matin</h4>
-                                    <p>Nuit à partir de <strong>128€</strong></p>
+                                    <div class="card_body_text">
+                                        <h4>Hôtel Le soleil du matin</h4>
+                                        <p>Nuit à partir de <strong>128€</strong></p>
+                                    </div>
+
                                     <div class="star_container_pop">
                                         <i class="fa-solid fa-star star_blue"></i>
                                         <i class="fa-solid fa-star star_blue"></i>
@@ -185,11 +188,13 @@
                         <a href="#" class="lien_card_pop">
                             <div class="card_pop">
                                 <div class="card_pop_img">
-                                    <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="au coeur de l'eau"/>
+                                    <img srcset="images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg 2010w, images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg 1000w, images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg 500w" sizes="(max-width:768px) 500px, (max-width: 992px) 1000px, 2010px" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="au coeur de l'eau"/>
                                 </div>
                                 <div class="card_pop_body">
-                                    <h4>Au coeur de l'eau Chambres d'hôtes</h4>
-                                    <p>Nuit à partir de <strong>71€</strong></p>
+                                    <div class="card_body_text">
+                                        <h4>Au coeur de l'eau Chambres d'hôtes</h4>
+                                        <p>Nuit à partir de <strong>71€</strong></p>
+                                    </div>
                                     <div class="star_container_pop">
                                         <i class="fa-solid fa-star star_blue"></i>
                                         <i class="fa-solid fa-star star_blue"></i>
@@ -203,11 +208,13 @@
                         <a href="#" class="lien_card_pop">
                             <div class="card_pop">
                                 <div class="card_pop_img">
-                                    <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="hotel tout bleu et blanc"/>
+                                    <img srcset="images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg 2000w, images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg 1000w, images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg 500w" sizes="(max-width:768px) 500px, (max-width: 992px) 1000px, 2000px" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="hotel tout bleu et blanc"/>
                                 </div>
                                 <div class="card_pop_body">
-                                    <h4>Hôtel Tout bleu et Blanc</h4>
-                                    <p>Nuit à partir de <strong>68€</strong></p>
+                                    <div class="card_body_text">
+                                        <h4>Hôtel Tout bleu et Blanc</h4>
+                                        <p>Nuit à partir de <strong>68€</strong></p>
+                                    </div>
                                     <div class="star_container_pop">
                                         <i class="fa-solid fa-star star_blue"></i>
                                         <i class="fa-solid fa-star star_blue"></i>
@@ -227,7 +234,7 @@
                     <a href="#" class="lien_card_activites_1">
                         <div class="card_activites_1">
                             <div class="card_activites_1_img">
-                                <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieux port"/>
+                                <img srcset="images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 2810w, images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 1400w, images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 700w" sizes="(max-width:768px) 700px, (max-width: 992px) 1400px, 2810px" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieux port"/>
                             </div>
                             <h4>Vieux Port</h4>
                         </div>
@@ -236,7 +243,7 @@
                         <a href="#" class="lien_card_activites_2_small">
                             <div class="card_activites_2_small">
                                 <div class="card_activites_2_small_img">
-                                    <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="fort de pomegues"/>
+                                    <img srcset="images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg 1420w, images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg 710w, images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg 350w" sizes="(max-width:768px) 350px, (max-width: 992px) 710px, 1420px" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="fort de pomegues"/>
                                 </div>
                                 <h4>Fort de Pomègues</h4>
                             </div>
@@ -244,7 +251,7 @@
                         <a href="#" class="lien_card_activites_2_x_small">
                             <div class="card_activites_2_x_small">
                                 <div class="card_activites_2_x_small_img">
-                                    <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="iles du frioul"/>
+                                    <img srcset="images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 2590w, images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 1300w, images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 650w" sizes="(max-width:768px) 650px, (max-width: 992px) 1300px, 2590px" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="iles du frioul"/>
                                 </div>
                                 <h4>Îles du Frioul</h4>
                             </div>
@@ -253,7 +260,7 @@
                     <a href="#" class="lien_card_activites_1">
                         <div class="card_activites_1">
                             <div class="card_activites_1_img">
-                                <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="parc national des Calanques"/>
+                                <img srcset="images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 2420w, images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 1210w, images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 600w" sizes="(max-width:768px) 600px, (max-width: 992px) 1210px, 2420px" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="parc national des Calanques"/>
                             </div>
                             <h4>Parc National des Calanques</h4>
                         </div>
@@ -262,7 +269,7 @@
                         <a href="#" class="lien_card_activites_2_x_small">
                             <div class="card_activites_2_x_small">
                                 <div class="card_activites_2_x_small_img">
-                                    <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="notre dame de la garde"/>
+                                    <img srcset="images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg 2360w, images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg 1180w, images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg 590w" sizes="(max-width:768px) 590px, (max-width: 992px) 1180px, 2360px" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="notre dame de la garde"/>
                                 </div>
                                 <h4>Notre-Dame-de-la-Garde</h4>
                             </div>
@@ -270,7 +277,7 @@
                         <a href="#" class="lien_card_activites_2_small">
                             <div class="card_activites_2_small">
                                 <div class="card_activites_2_small_img">
-                                    <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="parc longchamps"/>
+                                    <img srcset="images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg 2010w, images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg 1010w, images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg 500w" sizes="(max-width:768px) 500px, (max-width: 992px) 1010px, 2010px" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="parc longchamps"/>
                                 </div>
                                 <h4>Parc Longchamps</h4>
                             </div>
