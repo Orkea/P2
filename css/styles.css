@@ -160,9 +160,9 @@ main
 
 .filtre_lien:hover
 {
-    background-color: #083780;
-    color: #cc9d74;
-    transform: scale(1.03);
+    background-color: #0065FC;
+    color: white;
+    transform: scale(1.02);
     cursor: pointer;
 }
 
@@ -496,8 +496,8 @@ aside
                 /* --------Survol des elements -------- */
 .card_h:hover, .card_pop:hover,.card_activites_1:hover, .card_activites_2_small:hover, .card_activites_2_x_small:hover
 {
-    background-color: #083780;
-    color: #cc9d74;
+    background-color: #0065FC;
+    color: white;
     cursor: pointer;
     transform: scale(1.02);
 }
@@ -591,7 +591,7 @@ footer a
 
     #hebergement_pop_titre span
     {
-        margin-left: 20px;
+        margin-left: 60px;
     }
 
     #card_pop_container
